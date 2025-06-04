@@ -1,9 +1,7 @@
 const args = process.argv.slice(2);
 
-if (args.length === 0) {
+if (args[0] === undefined) {
   console.log("No argument");
-} else if (args.length === 1) {
-  console.log(args[0]);
 } else {
-  forEach(arg => console.log(arg + '\n'));
+  console.log(args[0])
 }
