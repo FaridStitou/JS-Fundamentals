@@ -2,10 +2,8 @@ function fact(n){
   if(Number.isInteger(n)) {
   if (n === 0 || n === 1) return 1;
   return n * fact(n - 1);
-  }else if (n === undefined) {
+  }else {
     return 1;
-}else {
-    return NaN;
   }
 }
 const args = process.argv.slice(2);
