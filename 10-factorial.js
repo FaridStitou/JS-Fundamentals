@@ -2,9 +2,11 @@ function fact(n){
   if(Number.isInteger(n)) {
   if (n === 0 || n === 1) return 1;
   return n * fact(n - 1);
-  }else{
-  return NaN;
-}
+  }else if (n === undefined) {
+    return 1;
+}else {
+    return NaN;
+  }
 }
 const args = process.argv.slice(2);
 let a = Number(args[0]);
